@@ -1,22 +1,23 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Gestión de Stock para Deportes",
-    'summary': "Módulo para gestionar stock de productos deportivos",
-    'description': "Este módulo permite gestionar el stock de productos deportivos en Odoo.",
-    'author': "DUP",
-    'category': 'Inventario',
+    'name': 'Gestión de Stock Deportivo',
     'version': '1.0',
-    'depends': ['base', 'stock'],
+    'category': 'Inventory',
+    'summary': 'Módulo para gestionar el stock de productos deportivos',
+    'description': 'Este módulo permite gestionar almacenes, categorías, productos y proveedores de stock deportivo.',
+    'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/producto_view.xml',
-        'views/categoria_view.xml',
-        'views/proveedor_view.xml',
-        'views/almacen_view.xml',
-        'views/menu.xml',
+        'views/almacen_views.xml',
+        'views/categoria_views.xml',
+        'views/producto_views.xml',
+        'views/proveedor_views.xml',
+        'demo/demo_data.xml',
     ],
     'installable': True,
     'application': True,
 }
+
+
 
 

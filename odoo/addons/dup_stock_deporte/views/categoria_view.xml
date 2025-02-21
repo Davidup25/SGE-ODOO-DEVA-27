@@ -1,0 +1,28 @@
+<odoo>
+    <record id="view_categoria_form" model="ir.ui.view">
+        <field name="name">categoria.form</field>
+        <field name="model">dup_stock_deporte.categoria</field>
+        <field name="arch" type="xml">
+            <form string="Categoría">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="descripcion"/>
+                        <field name="producto_ids" widget="one2many_list"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_categoria_tree" model="ir.ui.view">
+        <field name="name">categoria.tree</field>
+        <field name="model">dup_stock_deporte.categoria</field>
+        <field name="arch" type="xml">
+            <tree string="Categorías">
+                <field name="name"/>
+                <field name="descripcion"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
