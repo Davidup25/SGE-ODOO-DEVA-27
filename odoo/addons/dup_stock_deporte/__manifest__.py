@@ -2,7 +2,7 @@
 {
     'name': 'Gestión de Stock Deportivo',
     'version': '1.0',
-    'category': 'Inventory',
+    'category': 'Inventario',
     'summary': 'Módulo para gestionar el stock de productos deportivos',
     'description': 'Este módulo permite gestionar almacenes, categorías, productos y proveedores de stock deportivo.',
     'depends': ['base'],
