@@ -6,7 +6,7 @@ class Producto(models.Model):
 
     name = fields.Char(string='Nombre', required=True)
     descripcion = fields.Text(string='Descripción')
-    precio = fields.Float(string='Precio', required=True)
-    stock = fields.Integer(string='Stock Disponible')
+    precio = fields.Float(string='Precio')
+    stock = fields.Integer(string='Stock')
     categoria_id = fields.Many2one('dup_stock_deporte.categoria', string='Categoría')
     proveedor_id = fields.Many2one('dup_stock_deporte.proveedor', string='Proveedor')

@@ -2,7 +2,7 @@ from odoo import models, fields
 
 class Categoria(models.Model):
     _name = 'dup_stock_deporte.categoria'
-    _description = 'Categoría de Productos Deportivos'
+    _description = 'Categoría de Productos'
 
     name = fields.Char(string='Nombre', required=True)
     descripcion = fields.Text(string='Descripción')

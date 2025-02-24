@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <!-- Acciones para cada modelo -->
+        
+        <!-- Acción para proveedores -->
+        <record id="action_proveedor" model="ir.actions.act_window">
+            <field name="name">Proveedores</field>
+            <field name="res_model">dup_stock_deporte.proveedor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Acción para productos -->
+        <record id="action_producto" model="ir.actions.act_window">
+            <field name="name">Productos</field>
+            <field name="res_model">dup_stock_deporte.producto</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Acción para almacenes -->
+        <record id="action_almacen" model="ir.actions.act_window">
+            <field name="name">Almacenes</field>
+            <field name="res_model">dup_stock_deporte.almacen</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_categoria" model="ir.actions.act_window">
+            <field name="name">Categorías</field>
+            <field name="res_model">dup_stock_deporte.categoria</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_dup_stock_deporte" name="Gestión Deportiva" sequence="10"/>
+
+        <menuitem id="menu_proveedor" name="Proveedores" parent="menu_dup_stock_deporte" action="action_proveedor" sequence="1"/>
+
+        <menuitem id="menu_producto" name="Productos" parent="menu_dup_stock_deporte" action="action_producto" sequence="2"/>
+
+        <menuitem id="menu_almacen" name="Almacenes" parent="menu_dup_stock_deporte" action="action_almacen" sequence="3"/>
+
+        <menuitem id="menu_categoria" name="Categorías" parent="menu_dup_stock_deporte" action="action_categoria" sequence="4"/>
+    </data>
+</odoo>
