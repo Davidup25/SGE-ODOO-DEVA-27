@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Dup Stock Deporte',
+    'name': 'Dup_Stock_Deporte',
     'version': '1.0',
     'category': 'Inventario',
     'summary': 'Módulo para gestionar el stock de productos deportivos',
@@ -9,11 +9,11 @@
     'data': [
         'views/menu.xml',
         'security/ir.model.access.csv',
-        'views/almacen_views.xml',
-        'views/categoria_views.xml',
-        'views/producto_views.xml',
-        'views/proveedor_views.xml',
-        'demo/demo_data.xml',
+        'views/almacen_view.xml',
+        'views/categoria_view.xml',
+        'views/producto_view.xml',
+        'views/proveedor_view.xml',
+        'demo/demo.xml',
     ],
     'installable': True,
     'application': True,

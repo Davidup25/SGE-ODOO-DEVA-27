@@ -10,3 +10,4 @@ class Producto(models.Model):
     stock = fields.Integer(string='Stock')
     categoria_id = fields.Many2one('dup_stock_deporte.categoria', string='Categoría')
     proveedor_id = fields.Many2one('dup_stock_deporte.proveedor', string='Proveedor')
+    image = fields.Binary(string='Imagen')

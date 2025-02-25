@@ -1,7 +1,8 @@
 <odoo>
-    <record id="demo_almacen" model="dup_stock_deporte.almacen">
-        <field name="name">Almacén Principal</field>
-        <field name="ubicacion">Av Onu</field>
+    <record id="demo_record_1" model="tu_modelo">
+        <field name="name">Zapatillas de correr</field>
+        <field name="descripcion">Comodas zapatillas que te haran llegar a tus objetivos</field>
+        <field name="precio">70.0</field>
+        <field name="stock">50</field>
     </record>
 </odoo>
-
