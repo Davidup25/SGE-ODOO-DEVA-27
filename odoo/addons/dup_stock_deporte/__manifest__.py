@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': 'Dup_Stock_Deporte',
     'version': '1.0',
@@ -7,8 +6,9 @@
     'description': 'Este módulo permite gestionar almacenes, categorías, productos y proveedores de stock deportivo.',
     'depends': ['base'],
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',  
         'views/menu.xml',
-        'security/ir.model.access.csv',
         'views/almacen_view.xml',
         'views/categoria_view.xml',
         'views/producto_view.xml',
@@ -19,9 +19,4 @@
     'application': True,
     'auto_install': False,
     'icon': '/dup_stock_deporte/static/description/icon.png',
-
-
 }
-
-
-

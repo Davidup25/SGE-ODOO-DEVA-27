@@ -1,8 +1,68 @@
 <odoo>
-    <record id="demo_record_1" model="tu_modelo">
-        <field name="name">Zapatillas de correr</field>
-        <field name="descripcion">Comodas zapatillas que te haran llegar a tus objetivos</field>
-        <field name="precio">70.0</field>
-        <field name="stock">50</field>
-    </record>
+    <data>
+        <record id="demo_almacen_1" model="dup_stock_deporte.almacen">
+            <field name="name">Almacén Central</field>
+            <field name="ubicacion">AV de la ONU</field>
+        </record>
+
+        <record id="demo_almacen_2" model="dup_stock_deporte.almacen">
+            <field name="name">Almacén Secundario</field>
+            <field name="ubicacion">Calle Mayor 102</field>
+        </record>
+
+        <record id="demo_categoria_1" model="dup_stock_deporte.categoria">
+            <field name="name">Calzado</field>
+            <field name="descripcion">Todo tipo de calzado deportivo.</field>
+        </record>
+
+        <record id="demo_categoria_2" model="dup_stock_deporte.categoria">
+            <field name="name">Ropa</field>
+            <field name="descripcion">Ropa deportiva para todas las disciplinas.</field>
+        </record>
+
+        <record id="demo_categoria_3" model="dup_stock_deporte.categoria">
+            <field name="name">Accesorios</field>
+            <field name="descripcion">Accesorios deportivos como mochilas.</field>
+        </record>
+
+        <record id="demo_proveedor_1" model="dup_stock_deporte.proveedor">
+            <field name="name">Deportes S.A.</field>
+            <field name="direccion">Calle Ramon y Cajal 123</field>
+            <field name="telefono">123456789</field>
+        </record>
+
+
+        <record id="demo_proveedor_2" model="dup_stock_deporte.proveedor">
+            <field name="name">Nike</field>
+            <field name="direccion">Avenida Siempre Viva 742</field>
+            <field name="telefono">987654321</field>
+        </record>
+
+        <record id="demo_producto_1" model="dup_stock_deporte.producto">
+            <field name="name">Zapatillas de Correr NIKE</field>
+            <field name="descripcion">Zapatillas ligeras y cómodas para correr.</field>
+            <field name="precio">75.00</field>
+            <field name="stock">50</field>
+            <field name="categoria_id" ref="demo_categoria_1"/> 
+            <field name="proveedor_id" ref="demo_proveedor_2"/> 
+        </record>
+
+        <record id="demo_producto_2" model="dup_stock_deporte.producto">
+            <field name="name">Camiseta Deportiva</field>
+            <field name="descripcion">Camiseta transpirable para actividades deportivas.</field>
+            <field name="precio">30.00</field>
+            <field name="stock">100</field>
+            <field name="categoria_id" ref="demo_categoria_2"/> 
+            <field name="proveedor_id" ref="demo_proveedor_1"/> 
+        </record>
+
+        <record id="demo_producto_3" model="dup_stock_deporte.producto">
+            <field name="name">Mochila Deportiva</field>
+            <field name="descripcion">Mochila resistente para llevar tus cosas al gimnasio.</field>
+            <field name="precio">45.00</field>
+            <field name="stock">30</field>
+            <field name="categoria_id" ref="demo_categoria_3"/> 
+            <field name="proveedor_id" ref="demo_proveedor_1"/> 
+        </record>
+    </data>
 </odoo>

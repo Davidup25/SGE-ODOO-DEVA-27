@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="group_dup_stock_deporte_manager" model="res.groups">
+            <field name="name">Administrador de Stock Deportivo</field>
+        </record>
+
+        <record id="group_dup_stock_deporte_user" model="res.groups">
+            <field name="name">Usuario Interno de Stock Deportivo</field>
+        </record>
+    </data>
+</odoo>
